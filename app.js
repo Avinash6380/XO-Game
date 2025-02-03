@@ -30,9 +30,9 @@ buttons.forEach(button => {
                         (two.textContent === "X" && five.textContent === "X" && eight.textContent === "X"||
                             two.textContent === "O" && five.textContent === "O" && eight.textContent === "O")||  //Condition 2,5,8
                             (four.textContent === "X" && five.textContent === "X" && six.textContent === "X" ||
-                                four.textContent === "X" && five.textContent === "X" && six.textContent === "X")||  //Condition 4,5,6
+                                four.textContent === "O" && five.textContent === "O" && six.textContent === "O")||  //Condition 4,5,6
                                 (three.textContent === "X" && six.textContent ==="X" && nine.textContent === "X" ||
-                                    three.textContent === "X" && six.textContent ==="X" && nine.textContent === "X") //Condition 3,6,9
+                                    three.textContent === "O" && six.textContent ==="O" && nine.textContent === "O") //Condition 3,6,9
              ){
             showPopup()
     
@@ -51,12 +51,16 @@ function reset(){
     seven.textContent = "";
     eight.textContent = "";
     nine.textContent = "";
+    closePopup()
 }
 
 
 function showPopup(message) {
     // document.getElementById("popup-message").textContent = message;
-    document.getElementById("popup").style.display = "block";
+    popup = document.getElementById("popup"); 
+    popup.style.display = "block";
+    
+    
 }
 
 function closePopup() {
