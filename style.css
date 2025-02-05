@@ -86,7 +86,7 @@ body{
     border: none;
     background-color: #171313;
     /* visibility: hidden; */
-    font-size: xx-large;
+    font-size: 70px;
 }
 /* .container .main-body .bg-class .game-footer button{
     border: none;
@@ -109,7 +109,7 @@ button {
     transition: all 0.2s ease-in-out 0ms;
     user-select: none;
     font-family: 'Poppins', sans-serif;
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
 
     
   }
@@ -121,6 +121,9 @@ button {
   
   button:active {
     transform: scale(0.95);
+  }
+  #reset{
+    color: whitesmoke;
   }
 
 #X{
