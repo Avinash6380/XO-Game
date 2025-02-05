@@ -19,6 +19,15 @@ buttons.forEach(button => {
             turn = (turn === "X") ? "O" : "X";
             
         }
+        if (button.textContent === "X") {
+            button.style.color = "red";
+            button.style.textShadow = "0px 0px 20px rgba(255, 0, 0, 1)";
+            
+        }
+        else if(button.textContent === "O"){
+            button.style.color = "blue"
+            button.style.textShadow = "0px 0px 20px rgb(43, 0, 255)";
+        }
         if((one.textContent ==="X" && four.textContent === "X" && seven.textContent === "X" ||
              one.textContent === "O" && four.textContent ==="O" && seven.textContent === "O")||  // Condition 1,4,7
              (one.textContent === "X" && two.textContent === "X" && three.textContent === "X" || 
